@@ -1,0 +1,1 @@
+https://hub.docker.com/layers/jaqbsyrek/ubuntu2204_python38_java8jdk_kotlin/latest/images/sha256:a5ab0442317758f21e660f9e38290463d069ec1d3d92813364925e7b9a51d557
