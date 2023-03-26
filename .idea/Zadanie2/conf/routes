@@ -1,0 +1,20 @@
+# Product
+GET     /products                       controllers.ProductListController.getAll
+GET     /products/:itemId               controllers.ProductListController.getById(itemId: Long)
+PUT     /products/:itemId               controllers.ProductListController.updateProduct(itemId: Long)
+POST    /products                       controllers.ProductListController.addNewItem
+
+# Category routes
+GET     /categories           controllers.CategoryController.getAll
+GET     /categories/:id       controllers.CategoryController.getById(id: Long)
+POST    /categories           controllers.CategoryController.addNewCategory
+DELETE  /categories/:id       controllers.CategoryController.deleteCategory(id: Long)
+PUT     /categories/:categoryId        controllers.CategoryController.updateCategory(categoryId: Long)
+GET     /categories/count              controllers.CategoryController.getCategoryCount()
+GET     /categories/search             controllers.CategoryController.getCategoriesByName(name: String)
+
+# Cart routes
+GET     /cart                 controllers.CartController.getAll
+GET     /cart/:id             controllers.CartController.getById(id: Long)
+POST    /cart                 controllers.CartController.addCartItem
+DELETE  /cart/:id             controllers.CartController.deleteCartItem(id: Long)
